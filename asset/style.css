@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+.struct {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__nav {
+  /* position: fixed; */
+  padding-top: 7rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: max-content;
+  background: rgb(146, 169, 245);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__nav__logo {
+  margin-right: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.header__nav__logo img {
+  width: 2.3rem;
+}
+
+.header__nav__logo p {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: red;
+}
+
+.header__nav ul {
+  margin-left: 40rem;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+li {
+  margin: 1rem;
+}
+
+#idcontent1 {
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/asset/img/carousel-1.jpg");
+}
+
+h2 {
+  margin-top: 7.2rem;
+  margin-bottom: 0.8rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.main__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.1rem 4rem;
+}
+
+.main__cards__item {
+  margin: 4rem 0rem 0 0rem;
+  padding: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 25vw;
+  border: 1px solid transparent;
+  background: rgb(249, 245, 245);
+}
+
+.main__cards__item__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.main__cards__item__content h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+}
+
+.main__cards__item__content img {
+  width: 8.5rem;
+}
+
+.main__cards__item__content p {
+  width: 25rem;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+.main__cards__item:hover .main__cards__item__content {
+  transform: translateY(-1rem);
+}
+
+.main__competences {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.main__competences ul {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.main__competences img {
+  width: 5rem;
+}
+
+.main__competences p {
+  width: 30rem;
+}
+
+.main__competences__person {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main__competences__person img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+}
+
+.main__competences__person__paragraph {
+  padding: 1rem 1rem 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 25vw;
+  line-height: 1.5rem;
+  background: rgb(249, 81, 81);
+  color: aliceblue;
+}
+
+.main__competences__person__paragraph p {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 22vw;
+  line-height: 1.5rem;
+}
+
+.main__competences__person__paragraph button {
+  padding: 1rem;
+  margin: 3rem auto;
+  width: 10rem;
+  line-height: 1.5rem;
+  background: white;
+  color: black;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+}
+
+/*<!-------------------------------------->
+  <!-- MAIN PART / CONSULTANCY ----------->
+  <!-------------------------------------->*/
+
+.main__consultancy {
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  justify-content: left;
+  align-items: stretch;
+}
+
+.main__consultancy img {
+  width: 50vw;
+  height: 65vh;
+  object-fit: cover;
+}
+
+.main__consultancy__form {
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  background: #f5f5f7;
+}
+
+.main__consultancy__form h2 {
+  display: flex;
+  text-align: justify;
+}
+
+.main__consultancy__form p {
+  margin-top: 1.1rem;
+  margin-bottom: 1.4rem;
+  width: 40vw;
+  line-height: 1.5rem;
+  text-align: justify;
+  align-items: center;
+  color: rgb(93, 91, 91);
+}
+
+.main__consultancy__form form {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main__consultancy__form input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 20vw;
+  height: 3.6rem;
+  font-size: 1.07rem;
+  border: 1px solid #cfcfd1;
+  border-radius: 0.2rem;
+}
+
+.main__consultancy__form button {
+  padding: 1rem;
+  width: 20vw;
+  font-size: 1.07rem;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  background: rgb(250, 87, 87);
+  color: aliceblue;
+}
+
+.main__consultancy__form button:hover {
+  background: rgb(251, 112, 112);
+  color: black;
+  cursor: pointer;
+}
+
+/*<!-------------------------------------->
+  <!-- MAIN PART / TEAM MEMBERS ---------->
+  <!-------------------------------------->*/
+
+.main__members__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  z-index: 2;
+}
+
+.main__members__cards__item img {
+  display: flex;
+  flex-direction: column;
+  width: 27vw;
+  object-fit: cover;
+}
+
+.main__members__cards__item img:hover {
+  transform: translateX(1rem);
+}
+
+/* #idteam_1 {
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("asset/img/team-1.jpg");
+}
+
+#idteam_2 {
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("asset/img/team-2.jpg");
+}
+
+#idteam_3 {
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("asset/img/team-3.jpg");
+} */
